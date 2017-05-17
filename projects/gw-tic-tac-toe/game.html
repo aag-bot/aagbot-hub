@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aagbot/projects/ticTactoe</title>
+	<style type="text/css">
+		td {
+			border: solid 5px #303d5a;
+			width: 75px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+  <h1>Tic Tac Toe Game</h1>
+
+  <table>
+  	<thead></thead>
+
+	<tbody> </tbody>
+
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		 <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		  <tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+  	
+  </table>
+  
+  <!-- check out more information on w3schools -->
+
+  <script type="text/javascript">
+
+      // var td = document.querySelector('td')
+      //   td.onclick = function() {
+      //   	this.innerHTML = 'X';
+      //   }
+  	  
+  	  var tds = document.querySelectorAll('td');
+
+  	  var turn = 'X';
+
+  	  for (var i=0; i<tds.length; i++) {
+         // tds[i].innerHTML = 'X';
+
+         tds[i].onclick = function() {
+         	this.innerHTML = turn;
+
+// this is how we do the switching
+
+         	  if (turn == 'X') turn = 'O';
+         	  else turn = 'X';
+         }
+  	  }
+
+
+
+
+
+  </script>
+
+</body>
+</html>
